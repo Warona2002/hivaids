@@ -1,0 +1,140 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.page-container {
+    position: relative;
+    height: 100%;
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+.navbar {
+    background-color: #f3f3f3; /* Soft light gray background */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 50px; /* Adjust the logo size */
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #555; /* Soft dark gray */
+    font-size: 1.1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff7f50; /* Soft orange for a cute touch */
+}
+
+.nav-links a.active {
+    color: #ff7f50; /* Soft orange to match the hover color */
+    font-weight: bold; /* Make the active link stand out */
+    text-decoration: underline; /* Optional: underline the active link */
+}
+* Symptoms Page */
+.hiv-symptoms {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.hiv-symptoms h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hiv-symptoms p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.symptoms-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.symptom-card {
+    background-color: #f4f4f4;
+    padding: 30px;
+    width: 23%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.symptom-card:hover {
+    transform: scale(1.05);
+}
+
+.symptom-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.symptom-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.symptom-card p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%; /* Ensures the footer stretches across the entire screen */
+    left: 0; /* Ensures it aligns with the left edge */
+}
+
+.footer a {
+    color: rgb(245, 36, 36);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: rgb(156, 103, 103);
+    text-decoration: underline;
+}

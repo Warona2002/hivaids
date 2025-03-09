@@ -1,0 +1,210 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.page-container {
+    position: relative;
+    height: 100%;
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+.navbar {
+    background-color: #f3f3f3; /* Soft light gray background */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 50px; /* Adjust the logo size */
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #555; /* Soft dark gray */
+    font-size: 1.1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff7f50; /* Soft orange for a cute touch */
+}
+.nav-links a.active {
+    color: #ff7f50; /* Soft orange to match the hover color */
+    font-weight: bold; /* Make the active link stand out */
+    text-decoration: underline; /* Optional: underline the active link */
+}
+
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to bottom right, #ffb3a7, #f8c8c1);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #d85c52;
+}
+
+/* Quick Facts Section */
+.facts {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.fact-card img {
+    width: 20%;
+    height: auto;
+}
+
+.facts h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.fact-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.fact-card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    width: 25%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.fact-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.fact-card p {
+    font-size: 1.1rem;
+    margin-top: 15px;
+}
+
+/* Navigation Preview Section */
+.navigation-preview {
+    background-color: #f8f8f8;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.navigation-preview h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.preview-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    width: 22%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer a {
+    color: rgb(245, 36, 36);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: rgb(156, 103, 103);
+    text-decoration: underline;
+}
+
+
+

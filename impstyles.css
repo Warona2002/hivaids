@@ -1,0 +1,193 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.page-container {
+    position: relative;
+    height: 100%;
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+.navbar {
+    background-color: #f3f3f3; /* Soft light gray background */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 50px; /* Adjust the logo size */
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #555; /* Soft dark gray */
+    font-size: 1.1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff7f50; /* Soft orange for a cute touch */
+}
+
+.nav-links a.active {
+    color: #ff7f50; /* Soft orange to match the hover color */
+    font-weight: bold; /* Make the active link stand out */
+    text-decoration: underline; /* Optional: underline the active link */
+}
+
+/* Importance of Adherence Page */
+.importance-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.header-image {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: #333;
+    overflow: hidden;
+}
+
+.header-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    max-width: 80%;
+}
+
+.header-text h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.header-text p {
+    font-size: 1.4rem;
+}
+
+.content {
+    margin-top: 40px;
+}
+
+.importance-facts {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.importance-facts h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.importance-facts p {
+    font-size: 1.2rem;
+}
+
+.importance-quote blockquote {
+    font-size: 1.3rem;
+    font-style: italic;
+    margin: 30px 0;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.importance-quote footer {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 10px;
+    color: #333;
+}
+
+.benefits {
+    margin-top: 50px;
+}
+
+.benefits h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.benefit-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.benefit-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.benefit-card p {
+    font-size: 1.2rem;
+}
+
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer a {
+    color: rgb(245, 36, 36);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: rgb(156, 103, 103);
+    text-decoration: underline;
+}

@@ -1,0 +1,125 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.page-container {
+    position: relative;
+    height: 100%;
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+
+.navbar {
+    background-color: #f3f3f3; /* Soft light gray background */
+    padding: 15px 30px; /* Slightly more padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    color: #555;
+    font-size: 1.1rem; 
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff7f50; /* Soft orange for a cute touch */
+}
+.nav-links a.active {
+    color: #ff7f50; /* Soft orange to match the hover color */
+    font-weight: bold; /* Make the active link stand out */
+    text-decoration: underline; /* Optional: underline the active link */
+}
+#content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centering */
+    gap: 40px; /* Adds space between text and image */
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    width: 90%; /* More balanced layout */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: left;
+    max-width: 1000px; /* Prevents it from stretching too much */
+}
+
+#text-content {
+    flex: 1;
+    padding: 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+#image-content {
+    flex: 1;
+    text-align: center;
+}
+
+#image-content img {
+    width: 100%; /* Ensures responsiveness */
+    height: 50%;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(207, 148, 148, 0.2);
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+#image-content img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+.footer a {
+    color: rgb(245, 36, 36);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: rgb(156, 103, 103);
+    text-decoration: underline;
+}
+
